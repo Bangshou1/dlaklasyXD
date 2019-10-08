@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+int ilosc, cena, iloscz, cenaz, r, cenar, cenaw;
+
+int main()
+{
+    cout << "Wprowadz ilosc mango, ktore chcesz kupic:";
+    cin>>ilosc;
+    cout<<"Wprowadz cene jednego mago:";
+    cin>>cena;
+    iloscz = ilosc/3;
+    cout<<"Ilosc zestawow: "<<iloscz<<endl;
+    cenaz = iloscz*cena*2;
+    r = ilosc-iloscz*3;
+    cenar = r*cena;
+    cenaw = cenar+cenaz;
+    cout<<"Za mango zaplacisz: "<<cenaw;
+
+    return 0;
+}
